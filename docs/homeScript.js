@@ -2,7 +2,9 @@
 
 function createTopNav () {
     const links = [
-        {text: 'Home', href: ''}
+        {text: 'Home', href: ''},
+        {text: 'Art', href: ''},
+        {text: 'Contact', href: ''}
     ];
     const nav = document.createElement('div');
     nav.className = 'topnav';
