@@ -7,7 +7,6 @@ function createTopNav () {
         {text: 'Contact', href: ''}
     ];
     const nav = document.createElement('div');
-    const subnav = document.createElement('div');
     nav.className = 'topnav';
     Object.assign(nav.style, {position: 'fixed', borderRadius: '25px', overflow: 'hidden', backgroundColor: 'lightpink', zIndex: '6'});
     links.forEach(l => {
@@ -18,9 +17,8 @@ function createTopNav () {
         if (l.floatRight) a.classList.add('right');
         nav.appendChild(a);
     });
-    Object.assign(subnav.style, {marginBottom: '50px'});
-    const referenceElement = document.getElementById('startLine');
-    referenceElement.appendChild(nav);
-    referenceElement.appendChild(subnav);
+    const start = document.getElementById('startLine');
+    start.appendChild(nav);
+    Object.assign(start.style, {marginBottom: '50px'});
     return nav;
 }
