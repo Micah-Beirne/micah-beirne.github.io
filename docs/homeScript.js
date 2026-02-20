@@ -23,6 +23,7 @@ function createTopNav () {
     txt.textContent = "Home";
     subnav.appendChild(txt);
     const referenceElement = document.getElementById('startLine');
+    Object.assign(document.body.style, {marginTop: '50px'});
     referenceElement.appendChild(nav);
     referenceElement.appendChild(subnav);
     return nav;
