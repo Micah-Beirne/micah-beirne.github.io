@@ -18,12 +18,8 @@ function createTopNav () {
         if (l.floatRight) a.classList.add('right');
         nav.appendChild(a);
     });
-    const txt = document.createElement('p');
-    Object.assign(txt.style, {float: 'left', display: 'block', color: 'white', textAlign: 'center', padding: '14px', textDecoration: 'none',});
-    txt.textContent = "Home";
-    subnav.appendChild(txt);
+    Object.assign(subnav.style, {marginBottom: '50px'});
     const referenceElement = document.getElementById('startLine');
-    Object.assign(document.body.style, {marginTop: '50px'});
     referenceElement.appendChild(nav);
     referenceElement.appendChild(subnav);
     return nav;
