@@ -20,6 +20,7 @@ function createTopNav () {
     });
     const txt = document.createElement('p');
     Object.assign(txt.style, {float: 'left', display: 'block', color: 'white', textAlign: 'center', padding: '14px', textDecoration: 'none',});
+    txt.textContent = "Home";
     subnav.appendChild(txt);
     const referenceElement = document.getElementById('startLine');
     referenceElement.appendChild(nav);
