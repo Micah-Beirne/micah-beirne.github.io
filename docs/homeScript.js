@@ -13,6 +13,7 @@ function createTopNav () {
         if (l.floatRight) a.classList.add('right');
         nav.appendChild(a);
     });
-    parent.appendChild(nav);
+    const referenceElement = document.getElementById('startLine');
+    referenceElement.insertAdjacentHTML('beforebegin', nav);
     return nav;
 }
