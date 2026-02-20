@@ -1,3 +1,5 @@
+
+
 function createTopNav () {
     const links = [
         {text: 'Home', href: ''}
@@ -14,5 +16,3 @@ function createTopNav () {
     parent.appendChild(nav);
     return nav;
 }
-
-export default createTopNav;
