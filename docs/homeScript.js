@@ -14,7 +14,7 @@ function createTopNav () {
         const a = document.createElement('a');
         a.href = l.href;
         a.textContent = l.text;
-        Object.assign(a.style, {float: left; display: block; color: white; text-align: center; padding: 14px; text-decoration: none;} :hover {background-color: pink; box-shadow: 0px 0px 10px black;});
+        Object.assign(a.style, {float: left; display: block; color: white; text-align: center; padding: 14px; text-decoration: none; :hover {background-color: pink; box-shadow: 0px 0px 10px black;});
         if (l.floatRight) a.classList.add('right');
         nav.appendChild(a);
     });
