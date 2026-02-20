@@ -19,6 +19,7 @@ function createTopNav () {
     });
     const start = document.getElementById('startLine');
     start.appendChild(nav);
-    Object.assign(start.style, {marginBottom: '50px'});
+    Object.assign(document.body.style, {paddingTop: '1px'});
+    Object.assign(start.style, {marginBottom: '52px'});
     return nav;
 }
