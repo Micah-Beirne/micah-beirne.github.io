@@ -24,7 +24,7 @@ function createTopNav () {
         a.href = l.href;
         a.textContent = l.text;
         Object.assign(a.style, {float: 'left', display: 'block', color: 'white', textAlign: 'center', padding: '14px', textDecoration: 'none'});
-        a.classList.add('.navLink');
+        a.classList.add('navLink');
         if (l.floatRight) a.classList.add('right');
         nav.appendChild(a);
     });
