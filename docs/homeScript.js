@@ -14,6 +14,6 @@ function createTopNav () {
         nav.appendChild(a);
     });
     const referenceElement = document.getElementById('startLine');
-    referenceElement.insertAdjacentHTML('beforebegin', nav);
+    referenceElement.appendChild(nav);
     return nav;
 }
