@@ -2,8 +2,8 @@
 
 function createTopNav () {
     const links = [
-        {text: 'Home', href: ''},
-        {text: 'Art', href: ''},
+        {text: 'Home', href: 'https://micah-beirne.github.io/'},
+        {text: 'Art', href: 'https://micah-beirne.github.io/contact'},
         {text: 'Contact', href: ''}
     ];
     const nav = document.createElement('div');
