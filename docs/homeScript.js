@@ -8,7 +8,7 @@ function createTopNav () {
     ];
     const nav = document.createElement('div');
     nav.className = 'topnav';
-    nav.classList.add(topnav);
+    nav.classList.add('topnav');
     links.forEach(l => {
         const a = document.createElement('a');
         a.href = l.href;
@@ -18,6 +18,6 @@ function createTopNav () {
     });
     const start = document.getElementById('startLine');
     start.appendChild(nav);
-    start.classList.add(startline);
+    start.classList.add('startline');
     return nav;
 }
