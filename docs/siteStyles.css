@@ -1,0 +1,26 @@
+body {
+    padding-top: 1px;
+    background-color: whitesmoke;
+}
+.startline {
+    margin-bottom: 52px;
+}
+.topnav {
+    position: fixed;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: lightpink;
+    z-index: 6;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: pink;
+    box-shadow: 0px 0px 10px black;
+}
