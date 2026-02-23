@@ -22,7 +22,7 @@ const pages = {
 function generatePage () {
     const id = window.location.hash.substring(1);
     const container = document.createElement('div');
-    container.classList.add('container');
+    //container.classList.add('container');
   
     const page = pages[id];
     const title = page.name;
