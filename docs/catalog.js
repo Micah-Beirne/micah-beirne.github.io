@@ -51,7 +51,7 @@ function generateCatalog () {
     let id = window.location.hash;
     const container = document.createElement('div');
     container.className = 'catalog';
-    //container.classList.add('catalog');
+    container.classList.add('catalog');
     if (id.length == 0) {
         id = id.substring(1);
     };
@@ -63,7 +63,6 @@ function generateCatalog () {
             container.appendChild(a);
         };
     });
-    const start = document.getElementById('startLine');
-    start.after(container);
+    body.appendChild(container);
     return container;
 };
