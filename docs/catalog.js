@@ -1,14 +1,14 @@
 const pages = {
-    001: {
+    stuff: {
         name: 'Stuff',
-        image: 'assets/stuff.png',
+        image: 'assets/illusionofcheese.jpg',
         alt: 'An image containing things, perhaps stuff',
         date: '01, 01, 0001',
         description: 'An image of stuff',
         tags: ['art'],
         type: 'normal'
-    }
-    002: {
+    },
+    things: {
         name: 'Things',
         image: 'assets/things.png',
         alt: 'An image containing things, perhaps stuff',
@@ -24,7 +24,7 @@ function generatePage () {
     const container = document.createElement('div');
     container.classList.add('container');
   
-    const page = pages.id;
+    const page = pages[id];
     const title = page.name;
     document.title = title;
     const name = document.createElement('h1');
