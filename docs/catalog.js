@@ -48,7 +48,7 @@ function generatePage () {
 };
 
 function generateCatalog () {
-    const id = window.location.hash;
+    let id = window.location.hash;
     const container = document.createElement('div');
     container.className = 'catalog';
     //container.classList.add('catalog');
