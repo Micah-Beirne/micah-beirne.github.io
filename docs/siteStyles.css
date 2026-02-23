@@ -29,13 +29,14 @@ body {
     margin: 0 auto;
     padding-top: 10px;
     width: 33vw;
-    justify-content:;
+    justify-content: normal;
 }
 .contact * {
     border-radius: 5px;
     width: 100%;
     text-align: center;
     padding: 10px 5px;
+    margin: 0 auto;
 }
 .contact textarea {
     text-align: left;
