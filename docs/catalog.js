@@ -22,7 +22,7 @@ const pages = {
 function generatePage () {
     const id = window.location.hash.substring(1);
     const container = document.createElement('div');
-    nav.className = 'container';
+    container.className = 'container';
     container.classList.add('container');
   
     const page = pages[id];
