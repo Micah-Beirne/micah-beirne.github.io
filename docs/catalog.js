@@ -29,14 +29,14 @@ function generatePage () {
     document.title = title;
     const name = document.createElement('h1');
     name.textContent = title;
-    containter.appendChild(name);
+    container.appendChild(name);
     const image = document.createElement('img');
     image.src = page.image;
     image.alt = page.alt;
-    containter.appendChild(image);
+    container.appendChild(image);
     const description = document.createElement('p');
     description.textContent = page.description + '\n\n' + page.date;
-    containter.appendChild(description);
+    container.appendChild(description);
   
     const start = document.getElementById('startLine');
     start.after(container);
