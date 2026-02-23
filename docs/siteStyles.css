@@ -24,3 +24,15 @@ body {
     background-color: pink;
     box-shadow: 0px 0px 10px black;
 }
+.contact {
+    align-items: center;
+    justify-content: center;
+}
+.contact input {
+    width: 300px;
+    box-sizing: border-box;
+}
+.contact label {
+    width: 300px;
+}
+    
