@@ -24,7 +24,6 @@ function generatePage () {
     const container = document.createElement('div');
     container.className = 'container';
     container.classList.add('container');
-  
     const page = pages[id];
     const title = page.name;
     document.title = title;
