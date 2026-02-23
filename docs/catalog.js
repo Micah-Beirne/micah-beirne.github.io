@@ -38,7 +38,7 @@ function generatePage () {
     description.textContent = page.description;
     container.appendChild(description);
     const date = document.createElement('p');
-    description.textContent = page.date;
+    date.textContent = page.date;
     container.appendChild(date);
   
     const start = document.getElementById('startLine');
