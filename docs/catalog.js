@@ -65,6 +65,6 @@ function generateCatalog () {
             div.appendChild(a);
         };
     });
-    body.appendChild(container);
+    document.body.appendChild(container);
     return container;
 };
