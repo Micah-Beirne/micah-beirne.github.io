@@ -60,7 +60,9 @@ function generateCatalog () {
             const a = document.createElement('a');
             a.href = 'https://micah-beirne.github.io/content#' + p[0];
             a.textContent = p[1].name;
-            container.appendChild(a);
+            const div = document.createElement('div');
+            container.appendChild(div);
+            div.appendChild(a);
         };
     });
     body.appendChild(container);
