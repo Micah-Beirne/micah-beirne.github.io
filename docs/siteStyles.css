@@ -42,4 +42,5 @@ body {
 .contact textarea {
     text-align: left;
     resize: vertical;
+    margin-bottom: 10px;
 }
