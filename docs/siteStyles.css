@@ -29,12 +29,12 @@ body {
     margin: 0 auto;
     width: 33vw;
     align-items: center;
-    justify-content: center;
 }
 .contact * {
     width: 100%;
+    text-align: center;
+    padding: 10px 0px;
 }
 .contact textarea {
     resize: vertical;
 }
-    
