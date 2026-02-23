@@ -55,7 +55,7 @@ function generateCatalog () {
     if (id.length == 0) {
         id = id.substring(1);
     };
-    pages.entries().forEach(p => {
+    Object.entries(pages).forEach(p => {
         if (!p.tags.includes(id)) {
             const a = document.createElement('a');
             a.href = 'https://micah-beirne.github.io/content#' + p;
