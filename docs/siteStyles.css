@@ -27,14 +27,16 @@ body {
 .contact {
     display: grid;
     margin: 0 auto;
+    padding-top: 10px;
     width: 33vw;
-    align-items: center;
 }
 .contact * {
+    border-radius: 5px;
     width: 100%;
     text-align: center;
     padding: 10px 0px;
 }
 .contact textarea {
+    text-align: left;
     resize: vertical;
 }
