@@ -26,20 +26,14 @@ body {
 }
 .contact {
     margin: 0 auto;
-    width: 33%;
+    width: 33vw;
     align-items: center;
     justify-content: center;
 }
-.contact input {
-    width: 300px;
-    box-sizing: border-box;
+.contact * {
+    width: 100%;
 }
 .contact textarea {
-    width: 300px;
-    box-sizing: border-box;
     resize: vertical;
-}
-.contact label {
-    width: 300px;
 }
     
