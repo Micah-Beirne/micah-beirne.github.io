@@ -53,23 +53,15 @@ function generateCatalog () {
     container.className = 'catalog';
     //container.classList.add('catalog');
     if (id.length == 0) {
-        pages.forEach(p => {
-            const a = document.createElement('a');
-            a.href = 'https://micah-beirne.github.io/content#' + p;
-            a.textContent = p;
-            container.appendChild(a);
-        });
-    };
-    else {
         id = id.substring(1);
-        pages.forEach(p => {
-            if (p.tags.includes(id)) {continue;};
-            const a = document.createElement('a');
-            a.href = 'https://micah-beirne.github.io/content#' + p;
-            a.textContent = p;
-            container.appendChild(a);
-        });
     };
+    pages.forEach(p => {
+        if (p.tags.includes(id)) {continue;};
+        const a = document.createElement('a');
+        a.href = 'https://micah-beirne.github.io/content#' + p;
+        a.textContent = p;
+        container.appendChild(a);
+    });
     const start = document.getElementById('startLine');
     start.after(container);
     return container;
