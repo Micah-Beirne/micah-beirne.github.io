@@ -35,8 +35,11 @@ function generatePage () {
     image.alt = page.alt;
     container.appendChild(image);
     const description = document.createElement('p');
-    description.textContent = page.description + '\n\n' + page.date;
+    description.textContent = page.description;
     container.appendChild(description);
+    const date = document.createElement('p');
+    description.textContent = page.date;
+    container.appendChild(date);
   
     const start = document.getElementById('startLine');
     start.after(container);
