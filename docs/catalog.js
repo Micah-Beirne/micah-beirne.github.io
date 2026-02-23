@@ -56,11 +56,10 @@ function generateCatalog () {
         id = id.substring(1);
     };
     Object.entries(pages).forEach(p => {
-        console.log(p);
-        if (!p.tags.includes(id)) {
+        if (!p[1].tags.includes(id)) {
             const a = document.createElement('a');
-            a.href = 'https://micah-beirne.github.io/content#' + p;
-            a.textContent = p;
+            a.href = 'https://micah-beirne.github.io/content#' + p[0];
+            a.textContent = p[1].name;
             container.appendChild(a);
         };
     });
