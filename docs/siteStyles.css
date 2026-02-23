@@ -45,3 +45,23 @@ body {
     resize: vertical;
     margin-bottom: 10px;
 }
+.catalog div {
+    position: fixed;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: lightpink;
+    z-index: 6;
+}
+.catalog a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.catalog a:hover {
+    background-color: pink;
+    box-shadow: 0px 0px 10px black;
+}
+    
