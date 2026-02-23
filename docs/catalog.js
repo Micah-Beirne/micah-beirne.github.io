@@ -56,11 +56,12 @@ function generateCatalog () {
         id = id.substring(1);
     };
     pages.forEach(p => {
-        if (p.tags.includes(id)) {continue;};
-        const a = document.createElement('a');
-        a.href = 'https://micah-beirne.github.io/content#' + p;
-        a.textContent = p;
-        container.appendChild(a);
+        if (!p.tags.includes(id)) {
+            const a = document.createElement('a');
+            a.href = 'https://micah-beirne.github.io/content#' + p;
+            a.textContent = p;
+            container.appendChild(a);
+        };
     });
     const start = document.getElementById('startLine');
     start.after(container);
