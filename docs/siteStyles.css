@@ -46,9 +46,9 @@ body {
     margin-bottom: 10px;
 }
 .catalog div {
-    position: fixed;
     border-radius: 25px;
     overflow: hidden;
+    margin: 0 auto;
     background-color: lightpink;
     z-index: 6;
 }
@@ -62,6 +62,6 @@ body {
 }
 .catalog a:hover {
     background-color: pink;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px 0px black inset;
 }
     
