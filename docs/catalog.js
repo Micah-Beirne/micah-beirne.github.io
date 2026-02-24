@@ -40,6 +40,8 @@ const pages = {
     }
 };
 
+const tags = ['art', 'writing', 'poetry', 'games', 'music', 'programs'];
+
 function generatePage () {
     const id = window.location.hash.substring(1);
     const container = document.createElement('div');
@@ -73,6 +75,27 @@ function generatePage () {
 
 function generateCatalog () {
     let id = window.location.hash;
+
+    const filters = document.createElement('form');
+    filters.className = 'filters';
+    filters.onSubmit = 'return handleSubmission(event)';
+    const select = document.createElement('select');
+    select.className = 'filterselect';
+    select.id = 'filterselect';
+    tags.forEach(t => {
+        const o = document.createElement('option');
+        o.value = t;
+        o.textContent = t;
+        select.appendChild(o);
+    });
+    filters.appendChild(select);
+    const submit = document.createElement('input');
+    submit.className = 'filter';
+    submit.type = 'submit';
+    submit.value = 'Filter!';
+    filters.appendChild(submit);
+    document.body.appendChild(filters);
+    
     const container = document.createElement('div');
     container.className = 'catalog';
     container.classList.add('catalog');
@@ -92,3 +115,9 @@ function generateCatalog () {
     document.body.appendChild(container);
     return container;
 };
+
+function handleSubmission(event) {
+        event.preventDefault();
+        const tag = document.getElementById('filterselect');
+        window.location.href = "https://micah-beirne.github.io/catalog#" + tag.value;
+    }
