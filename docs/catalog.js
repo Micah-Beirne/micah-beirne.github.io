@@ -1,21 +1,42 @@
 const pages = {
-    stuff: {
-        name: 'Stuff',
+    illusionofcheese: {
+        name: 'Illusion of Cheese',
         image: 'assets/illusionofcheese.jpg',
-        alt: 'An image containing things, perhaps stuff',
-        date: '01, 01, 0001',
-        description: 'An image of stuff',
+        alt: 'A cow must choose between colleges, but both eventually lead to cheese club',
+        date: '02/18/2026',
+        description: '',
         tags: ['art'],
         type: 'normal'
     },
-    things: {
-        name: 'Things',
-        image: 'assets/things.png',
-        alt: 'An image containing things, perhaps stuff',
-        date: '01, 01, 0002',
-        description: 'An image of things',
-        tags: ['art', 'computer science'],
-        type: 'normal'
+    ambrosia: {
+        name: 'Ambrosia',
+        image: '',
+        alt: '',
+        date: '??/12/2025',
+        description: 
+            `Ambrosia
+
+            Upon a mountain in the land of beasts,
+            there rests an orange tree.
+            Frosted fruit on which it feasts,
+            has been bestowed on we.
+            
+            If Hebe poured this for the Gods,
+            I understand completely.
+            Their monstrous, their grand facades
+            to harbor this discretely.
+            
+            This liquid is my blinded Equus,
+            an eye-white tonic.
+            My leyline, my noble nexus,
+            smooth, sharp, chthonic.
+            
+            I am too young for blood red wine,
+            from tea does no yawn stir,
+            water's what they feed the swine
+            So I drink White Monster`,
+        tags: ['writing', 'poetry'],
+        type: 'no-image'
     }
 };
 
@@ -31,10 +52,12 @@ function generatePage () {
     const name = document.createElement('h1');
     name.textContent = title;
     container.appendChild(name);
-    const image = document.createElement('img');
-    image.src = page.image;
-    image.alt = page.alt;
-    container.appendChild(image);
+    if (page.type != 'no-image') {
+        const image = document.createElement('img');
+        image.src = page.image;
+        image.alt = page.alt;
+        container.appendChild(image);
+    }
     const description = document.createElement('p');
     description.textContent = page.description;
     container.appendChild(description);
