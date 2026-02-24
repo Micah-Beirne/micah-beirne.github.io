@@ -97,6 +97,7 @@ function generateCatalog () {
         event.preventDefault();
         const tag = document.getElementById('filterselect');
         window.location.href = "https://micah-beirne.github.io/catalog#" + tag.value;
+        window.location.reload();
     });
     document.body.appendChild(filters);
     
@@ -119,7 +120,3 @@ function generateCatalog () {
     document.body.appendChild(container);
     return container;
 };
-
-function handleSubmission(event) {
-        
-    }
