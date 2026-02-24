@@ -76,11 +76,11 @@ function generateCatalog () {
     const container = document.createElement('div');
     container.className = 'catalog';
     container.classList.add('catalog');
-    if (id.length == 0) {
+    if (id.length != 0) {
         id = id.substring(1);
     };
     Object.entries(pages).forEach(p => {
-        if (!p[1].tags.includes(id)) {
+        if (id.length == 0 || p[1].tags.includes(id)) {
             const a = document.createElement('a');
             a.href = 'https://micah-beirne.github.io/content#' + p[0];
             a.textContent = p[1].name;
