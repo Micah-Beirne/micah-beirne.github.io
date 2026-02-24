@@ -40,7 +40,7 @@ const pages = {
     }
 };
 
-const tags = ['art', 'writing', 'poetry', 'games', 'music', 'programs'];
+const tags = ['', 'art', 'writing', 'poetry', 'games', 'music', 'programs'];
 
 function generatePage () {
     const id = window.location.hash.substring(1);
