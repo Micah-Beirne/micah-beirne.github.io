@@ -78,7 +78,6 @@ function generateCatalog () {
 
     const filters = document.createElement('form');
     filters.className = 'filters';
-    filters.onSubmit = 'return handleSubmission(event)';
     const select = document.createElement('select');
     select.className = 'filterselect';
     select.id = 'filterselect';
@@ -94,6 +93,11 @@ function generateCatalog () {
     submit.type = 'submit';
     submit.value = 'Filter!';
     filters.appendChild(submit);
+    filters.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const tag = document.getElementById('filterselect');
+        window.location.href = "https://micah-beirne.github.io/catalog#" + tag.value;
+    });
     document.body.appendChild(filters);
     
     const container = document.createElement('div');
@@ -117,7 +121,5 @@ function generateCatalog () {
 };
 
 function handleSubmission(event) {
-        event.preventDefault();
-        const tag = document.getElementById('filterselect');
-        window.location.href = "https://micah-beirne.github.io/catalog#" + tag.value;
+        
     }
