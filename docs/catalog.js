@@ -59,6 +59,7 @@ function generatePage () {
         container.appendChild(image);
     }
     const description = document.createElement('p');
+    description.style.whiteSpace = 'pre';
     description.textContent = page.description;
     container.appendChild(description);
     const date = document.createElement('p');
