@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Error\: Message Not Sent</title>
+        <link rel="stylesheet" href="siteStyles.css">
+    </head>
+    <body>
+        <h1>Error\: Message Not Sent</h1>
+        <h3>Please retry. If that fails, then email me at micah.beirne.ny@gmail.com</h3>
+        <a href = "https//micah-beirne.github.io/">Home<a>
+    </body>
+</html> 
